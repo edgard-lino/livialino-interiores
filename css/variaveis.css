@@ -1,0 +1,13 @@
+:root {
+  --azul: #52658C;
+  --azul-claro: #8694B4;
+  --azul-escuro: #3B4661;
+  --vinho: #A8518A;
+  --vinho-claro: #C895B8;
+  --cinza: #dad8d8;
+  --cinza-claro: #f0f0f0;
+  --branco: white;
+
+  --fonte-principal: 'Montserrat', sans-serif;
+  --fonte-especial: 'Oooh Baby', cursive;
+}

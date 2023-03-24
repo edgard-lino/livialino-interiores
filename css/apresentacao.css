@@ -1,0 +1,200 @@
+.apresentacao {
+  background: linear-gradient(var(--branco), var(--cinza));
+  padding-bottom: 1rem;
+}
+
+.apresentacao__meus-servicos {
+  background-color: var(--cinza);
+  padding-bottom: 1rem;
+  
+}
+
+.apresentacao__cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.design__cartao .design__texto {
+  display: none;
+}
+
+.acompanhamento__cartao .acompanhamento__texto {
+  display: none;
+}
+
+.consultoria__cartao .consultoria__texto {
+  display: none;
+}
+
+.design__cartao--texto, .acompanhamento__cartao--texto, .consultoria__cartao--texto {
+  height: 3.5rem;
+  transition: 0.5s;
+}
+
+
+
+.design__cartao:hover .design__cartao--texto {
+  height: 9rem;
+}
+
+.design__cartao:hover .design__saiba-mais {
+  display: none;
+}
+
+.design__cartao:hover .design__texto {
+  display: block;
+}
+
+.acompanhamento__cartao:hover .acompanhamento__cartao--texto {
+  height: 10rem;
+}
+
+
+
+
+.acompanhamento__cartao:hover .acompanhamento__saiba-mais {
+  display: none;
+}
+
+.acompanhamento__cartao:hover .acompanhamento__texto {
+  display: block;
+}
+
+.consultoria__cartao:hover .consultoria__cartao--texto {
+  height: 8rem;
+}
+
+.consultoria__cartao:hover .consultoria__saiba-mais {
+  display: none;
+}
+
+.consultoria__cartao:hover .consultoria__texto {
+  display: block;
+}
+
+.apresentacao__cartao {
+  background-color: var(--branco);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.515);
+  margin: 1rem;
+  text-align: center;
+  width: 22rem;
+  transition: 0.5s;
+}
+
+.apresentacao__cartao--imagem {
+  width:100%;
+}
+
+.apresentacao__cartao--titulo {
+  color: var(--azul);
+  font-family: var(--fonte-especial);
+  font-size: 2rem;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+.apresentacao__cartao--texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+.apresentacao__cartao--texto p {
+  display: block;
+  font-family: var(--fonte-principal);
+  color: var(--azul);
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+.apresentacao__meus-projetos {
+  text-align: center;
+  background: linear-gradient(var(--cinza), var(--branco));
+  position: relative;
+  padding: 2rem 0;
+}
+
+.apresentacao__meus-projetos--link {
+  text-decoration: none;
+}
+
+.apresentacao__meus-projetos--imagem {
+  height: 13.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/imagem1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.472);
+}
+
+.apresentacao__meus-projetos--botao {
+  display: block;
+  border: 1px solid var(--vinho);
+  border-radius: 30px;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  color: var(--vinho);
+  background: var(--branco);
+  font-weight: 700;
+  text-decoration: none;
+  width: 15rem;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+
+  .design__cartao--texto, .consultoria__cartao--texto, .acompanhamento__cartao--texto {
+    height: 10rem;
+  }
+
+  .design__cartao--texto .design__saiba-mais, .consultoria__cartao--texto .consultoria__saiba-mais, .acompanhamento__cartao--texto .acompanhamento__saiba-mais {
+    display: none;
+  }
+
+  .design__cartao--texto .design__texto, .consultoria__cartao--texto .consultoria__texto, .acompanhamento__cartao--texto .acompanhamento__texto {
+    display: block;
+  }
+
+  
+
+  .apresentacao__container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+
+
+  .apresentacao__cartao:hover {
+    transform: scale(1.1);
+  }
+  
+  .apresentacao__meus-projetos--imagem {
+    height: 30rem;
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .apresentacao__container {
+    padding-top: 3rem;
+  }
+
+  .apresentacao__meus-projetos--botao:hover {
+    background: var(--vinho);
+    color: var(--branco);
+  }
+
+  .apresentacao__meus-projetos--botao:active {
+    opacity: 0.7;
+  }
+}

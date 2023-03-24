@@ -1,0 +1,66 @@
+.meus-projetos {
+  padding: 2rem 0;
+}
+
+.meus-projetos__projeto {
+  background: var(--cinza-claro);
+  border: solid 1px var(--cinza);
+  width: 95vw;
+  padding: 0.4rem 0 0 0;
+  margin: 3rem auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.504);
+}
+
+.meus-projetos__projeto--texto {
+  color: var(--azul-escuro);
+  font-family: var(--fonte-especial);
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0 0 0.4rem 0;
+  text-align: center;
+}
+
+.meus-projetos__botao {
+  display: block;
+  border: 1px solid var(--vinho);
+  border-radius: 30px;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  color: var(--vinho);
+  background: var(--branco);
+  font-weight: 700;
+  text-decoration: none;
+  width: 15rem;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .meus-projetos__projeto {
+    width: 70vw;
+    padding: 0.7rem 0 0 0;
+  }
+ 
+  .meus-projetos__projeto--texto {
+    padding: 0 0 0.7rem 0;
+  }
+  
+  .meus-projetos__botao:hover {
+    background: var(--vinho);
+    color: var(--branco);
+  }
+
+  .meus-projetos__botao:active {
+    opacity: 0.7;
+  }
+}
+
