@@ -1,6 +1,9 @@
 .rodape {
   background-color: var(--azul-escuro);
   text-align: center;
+}
+
+.rodape__principal {
   padding: 3rem 0;
 }
 
@@ -43,16 +46,29 @@
   align-items: center;
 }
 
+.rodape__assinatura {
+  padding-bottom: 0.5rem;
+  
+}
+
+.rodape__assinatura__link {
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 600px) {
 
   .rodape__container--redes-sociais{
     display: flex;
   }
 
-  .rodape {
+  .rodape__principal {
     display: flex;
     justify-content: space-around;
-  } 
+  }
 
   .rodape__container {
     flex-direction: column;
