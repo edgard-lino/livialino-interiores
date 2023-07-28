@@ -40,7 +40,7 @@ form label {
 input {
     padding: 1rem;
     border-radius: 10px;
-    border: 0.5px solid var(--cinza);
+    border: 1px solid var(--cinza);
     font-family: var(--fonte-principal);
 }
 
