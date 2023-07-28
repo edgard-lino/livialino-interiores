@@ -1,0 +1,36 @@
+.sucesso__container {
+    width: 600px;
+    margin: 0 auto;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sucesso__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.sucesso__botao-voltar {
+    color: var(--branco);
+    background: var(--vinho);
+
+    border: 1px solid var(--vinho);
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    width: 15rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 2rem auto;
+}
