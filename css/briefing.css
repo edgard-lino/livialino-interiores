@@ -1,0 +1,57 @@
+.briefing__container {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.briefing__cabecalho {
+    position: relative;
+    border-bottom: 1px solid var(--cinza);
+}
+
+.briefing__cabecalho__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 9rem;
+}
+
+.briefing__cabecalho__container__logo {
+    align-items: center;
+    width: 7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+form label {
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 1rem 0 0 0;
+    text-align: center;
+
+}
+
+
+
+@media screen and (min-width: 720px) {
+    .briefing__container {
+        max-width: 700px;
+    }
+
+    .briefing__cabecalho__container {
+        justify-content: space-around;
+        height: 11rem;
+    }
+
+    .briefing__cabecalho__container__logo {
+        width: 9rem;
+    }
+
+}
