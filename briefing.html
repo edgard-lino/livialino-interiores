@@ -30,14 +30,18 @@
   <main class="briefing__principal">
     <div class="briefing__container">
       <p class="texto">Para que eu possa entender melhor as suas expectativas, necessidades e preferências, eu gostaria que você respondesse a este questionário. O questionário é simples e rápido, e vai me ajudar a criar um projeto personalizado, funcional e harmonioso para o seu imóvel. Por favor, responda às perguntas com sinceridade e detalhamento, e envie o formulário ao final. Eu agradeço pela sua colaboração.</p>
-      <form action="https://formsubmit.co/mosmack@gmail.com" method="POST"m> 
+      <form action="https://formsubmit.co/mosmack@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://livialino-interiores.vercel.app/sucesso.html">
+        <input type="hidden" name="_captcha" value="false">
+
+
         <label for="nome">Qual é o seu nome e o seu contato (telefone e e-mail)?</label> 
         <input type="text" name="nome" placeholder="Nome completo" required> 
         <input type="tel" name="telefone" required placeholder="(XX)XXXXX-XXXX" > 
         <input type="email" name="email" placeholder="exemplo@email.com">
   
         <label for="tipo">Qual é o tipo de imóvel que você quer decorar (casa, apartamento, loft, etc)?</label> 
-        <input type="text" name=“tipo” placeholder="Tipo de imóvel">
+        <input type="text" name="tipo" placeholder="Tipo de imóvel">
         
         <label for="metragem">Qual é a metragem quadrada do imóvel?</label> 
         <input type="number" name="metragem" placeholder="Metragem em m²" min="0">
