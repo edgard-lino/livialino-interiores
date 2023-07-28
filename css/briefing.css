@@ -35,9 +35,38 @@ form label {
     line-height: 2rem;
     padding: 1rem 0 0 0;
     text-align: center;
-
 }
 
+input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0.5px solid var(--cinza);
+    font-family: var(--fonte-principal);
+}
+
+.briefing__botao {
+    color: var(--branco);
+    background: var(--vinho);
+
+    border: 1px solid var(--vinho);
+    border-radius: 30px;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    width: 15rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 2rem auto;
+}
+
+.briefing__botao:active {
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
 
 
 @media screen and (min-width: 720px) {
