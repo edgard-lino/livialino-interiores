@@ -68,6 +68,10 @@ input {
     border-color: var(--azul);
 }
 
+.teste-nao-exibir {
+    display: none;
+}
+
 
 @media screen and (min-width: 720px) {
     .briefing__container {
