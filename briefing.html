@@ -30,61 +30,120 @@
   <main class="briefing__principal">
     <div class="briefing__container">
       <p class="texto">Para que eu possa entender melhor as suas expectativas, necessidades e preferências, eu gostaria que você respondesse a este questionário. O questionário é simples e rápido, e vai me ajudar a criar um projeto personalizado, funcional e harmonioso para o seu imóvel. Por favor, responda às perguntas com sinceridade e detalhamento, e envie o formulário ao final. Eu agradeço pela sua colaboração.</p>
-      <form action="https://formsubmit.co/mosmack@gmail.com" method="POST">
+      <form class="formulario" action="https://formsubmit.co/mosmack@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://livialino-interiores.vercel.app/sucesso.html">
+
+        <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html"> -->
+
         <input type="hidden" name="_captcha" value="false">
 
 
         <label for="nome">Qual é o seu nome e o seu contato (telefone e e-mail)?</label> 
         <input type="text" name="nome" placeholder="Nome completo" required> 
-        <input type="tel" name="telefone" required placeholder="(XX)XXXXX-XXXX" required> 
-        <input type="email" name="email" placeholder="exemplo@email.com" required>
+        <input type="tel" name="telefone" required placeholder="(XX)XXXXX-XXXX"> 
+        <input type="email" name="email" placeholder="exemplo@email.com" id="email">
   
         <label for="tipo">Qual é o tipo de imóvel que você quer decorar (casa, apartamento, loft, etc)?</label> 
-        <input type="text" name="tipo" placeholder="Tipo de imóvel" required>
+        <input type="text" name="tipo" placeholder="Tipo de imóvel">
         
         <label for="metragem">Qual é a metragem quadrada do imóvel?</label> 
-        <input type="number" name="metragem" placeholder="Metragem em m²" min="0" required>
+        <input type="number" name="metragem" placeholder="Metragem em m²" min="0">
 
         <label for="quantidade-ambientes">Quantos ambientes você quer decorar?</label> 
-        <input type="number" name="quantidade-ambientes" placeholder="Quantidade de ambientes." min="0" required>
+        <input class="perguntaAmbiente" type="number" name="quantidade-ambientes" placeholder="Quantidade de ambientes." min="0">
 
-        <label for="ambientes">Quais são os ambientes que você quer decorar (sala, quarto, cozinha, banheiro, etc)?</label> 
-        <input type="text" name="ambientes" placeholder="Ambientes." required>
-
-        <label for="perfil">Qual é o perfil dos moradores (quantas pessoas, idades, profissões, hobbies, etc)?</label> 
-        <input type="text" name="perfil" placeholder="Perfil dos moradores." required>
-
-        <label for="rotina">Como é a rotina dos moradores (horários de trabalho, estudo, lazer, etc)?</label> 
-        <input type="text" name="rotina" placeholder="Rotina dos moradores." required>
-
-        <label for="cores">Quais são as cores que você gosta e as que você não gosta?</label> 
-        <input type="text" name="cores" placeholder="Cores que gosta e não gosta." required>
-
-        <label for="estilos">Quais são os estilos de decoração que você prefere (moderno, clássico, rústico, minimalista, etc)?</label> 
-        <input type="text" name="estilos" placeholder="Estilos de decoração preferidos." required>
-
-        <div class="teste-nao-exibir">
-          <label for="referencia">Você tem alguma referência de decoração que você admira ou se inspira (revistas, sites, programas de TV, etc)?</label> 
-          <input type="text" name="referencia" placeholder="Referência de decoração.">
-  
-          <label for="aproveita-moveis">Quais são os móveis e objetos que você já tem e quer aproveitar no projeto?</label> 
-          <input type="text" name="aproveita-moveis" placeholder="Móveis e objetos para aproveitar.">
-  
-          <label for="moveis">Quais são os móveis e objetos que você precisa comprar ou trocar no projeto?</label> 
-          <input type="text" name="comprar-moveis" placeholder="Móveis e objetos para comprar ou trocar.">
-  
-          <label for="orcamento">Qual é o orçamento disponível para o projeto?</label> 
-          <input type="text" name="orcamento" placeholder="Orçamento disponível.">
-  
-          <label for="prazo">Qual é o prazo desejado para a conclusão do projeto?</label> 
-          <input type="text" name="prazo" placeholder="Prazo de conclusão do projeto.">
-
+        <label for="ambientes">Selecione os ambiente que você deseja decorar:</label> 
+        <div name="ambientes" class="ambientes__checkbox">
+          <label><input type="checkbox" id="seleciona-quarto"> Quarto</label>
+          <label><input type="checkbox" id="seleciona-sala"> Sala</label>
+          <label><input type="checkbox" id="seleciona-cozinha"> Cozinha</label>
+          <label><input type="checkbox" id="seleciona-banheiro"> Banheiro</label>
+          <label><input type="checkbox" id="seleciona-escritorio"> Escritório</label>
+          <label><input type="checkbox" id="seleciona-outros"> Outros</label>
         </div>
         
+        <div class="perguntas-ambientes display-none" id="perguntasQuarto">
+          <label for="pergunta__quarto1">Quarto - Pergunta sobre o quarto 01?</label> 
+          <input type="text" name="pergunta__quarto1" id="pergunta__quarto1" placeholder="Resposta quarto 01.">
+  
+          <label for="pergunta__quarto2">Quarto - Pergunta sobre o quarto 02?</label> 
+          <input type="text" name="pergunta__quarto2" id="pergunta__quarto2" placeholder="Resposta quarto 02.">
+
+          <label for="pergunta__quarto3">Quarto - Pergunta sobre o quarto 03?</label> 
+          <input type="text" name="pergunta__quarto3" id="pergunta__quarto3" placeholder="Resposta quarto 03.">
+
+          <label for="pergunta__quarto4">Quarto - Pergunta sobre o quarto 04?</label> 
+          <input type="text" name="pergunta__quarto4" id="pergunta__quarto4" placeholder="Resposta quarto 04.">
+        </div>
+
+        <div class="perguntas-ambientes display-none" id="perguntasSala">
+          <label for="pergunta__sala1">Sala - Pergunta sobre a sala 01?</label> 
+          <input type="text" name="pergunta__sala1" id="pergunta__sala1" placeholder="Resposta sala 01.">
+  
+          <label for="pergunta__sala2">Sala - Pergunta sobre a sala 02?</label> 
+          <input type="text" name="pergunta__sala2" id="pergunta__sala2" placeholder="Resposta sala 02.">
+
+          <label for="pergunta__sala3">Sala - Pergunta sobre a sala 03?</label> 
+          <input type="text" name="pergunta__sala3" id="pergunta__sala3" placeholder="Resposta sala 03.">
+
+          <label for="pergunta__sala4">Sala - Pergunta sobre a sala 04?</label> 
+          <input type="text" name="pergunta__sala4" id="pergunta__sala4" placeholder="Resposta sala 04.">
+        </div>
+
+        <div class="perguntas-ambientes display-none" id="perguntasCozinha">
+          <label for="pergunta__cozinha1">Cozinha - Pergunta sobre a cozinha 01?</label> 
+          <input type="text" name="pergunta__cozinha1" id="pergunta__cozinha1" placeholder="Resposta cozinha 01.">
+  
+          <label for="pergunta__cozinha2">Cozinha - Pergunta sobre a cozinha 02?</label> 
+          <input type="text" name="pergunta__cozinha2" id="pergunta__cozinha2" placeholder="Resposta cozinha 02.">
+
+          <label for="pergunta__cozinha3">Cozinha - Pergunta sobre a cozinha 03?</label> 
+          <input type="text" name="pergunta__cozinha3" id="pergunta__cozinha3" placeholder="Resposta cozinha 03.">
+
+          <label for="pergunta__cozinha4">Cozinha - Pergunta sobre a cozinha 04?</label> 
+          <input type="text" name="pergunta__cozinha4" id="pergunta__cozinha4" placeholder="Resposta cozinha 04.">
+        </div>
+
+        <div class="perguntas-ambientes display-none" id="perguntasBanheiro">
+          <label for="pergunta__banheiro1">Banheiro - Pergunta sobre o banheiro 01?</label> 
+          <input type="text" name="pergunta__banheiro1" id="pergunta__banheiro1" placeholder="Resposta banheiro 01.">
+  
+          <label for="pergunta__banheiro2">Banheiro - Pergunta sobre o banheiro 02?</label> 
+          <input type="text" name="pergunta__banheiro2" id="pergunta__banheiro2" placeholder="Resposta banheiro 02.">
+
+          <label for="pergunta__banheiro3">Banheiro - Pergunta sobre o banheiro 03?</label> 
+          <input type="text" name="pergunta__banheiro3" id="pergunta__banheiro3" placeholder="Resposta banheiro 03.">
+
+          <label for="pergunta__banheiro4">Banheiro - Pergunta sobre o banheiro 04?</label> 
+          <input type="text" name="pergunta__banheiro4" id="pergunta__banheiro4" placeholder="Resposta banheiro 04.">
+        </div>
+
+        <div class="perguntas-ambientes display-none" id="perguntasEscritorio">
+          <label for="pergunta__escritorio1">Escritório - Pergunta sobre o escritório 01?</label> 
+          <input type="text" name="pergunta__escritorio1" id="pergunta__escritorio1" placeholder="Resposta escritório 01.">
+  
+          <label for="pergunta__escritorio2">Escritório - Pergunta sobre o escritório 02?</label> 
+          <input type="text" name="pergunta__escritorio2" id="pergunta__escritorio2" placeholder="Resposta escritório 02.">
+
+          <label for="pergunta__escritorio3">Escritório - Pergunta sobre o escritório 03?</label> 
+          <input type="text" name="pergunta__escritorio3" id="pergunta__escritorio3" placeholder="Resposta escritório 03.">
+
+          <label for="pergunta__escritorio4">Escritório - Pergunta sobre o escritório 04?</label> 
+          <input type="text" name="pergunta__escritorio4" id="pergunta__escritorio4" placeholder="Resposta escritório 04.">
+        </div>
+
+        <div class="perguntas-ambientes display-none" id="perguntasOutros">
+          <label for="pergunta__outros1">Outros - Pergunta sobre outros?</label> 
+          <input type="text" name="pergunta__outros1" id="pergunta__outros1" placeholder="Resposta outros 01.">
+        </div>
 
         <button class="briefing__botao" type="submit">Enviar</button>
+
+        
+
+
       </form>
+
     </div>
 
 
