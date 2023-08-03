@@ -54,7 +54,7 @@
       </nav>
     </div>
   </header>
-  <main class="principal">
+  <main class="contato__principal">
     <address class="contato">
       <h2 class="titulo">Contato</h2>
       <div class="contato__whatsapp">
@@ -68,7 +68,7 @@
       <div class="contato__email">
         <a href="mailto:livialino.interiores@gmail.com">livialino.interiores@gmail.com</a>        
       </div>
-
+      
       
       <h2 class="titulo">Siga nas redes sociais</h2>
       <div class="contato__redes-sociais">
@@ -76,6 +76,34 @@
         <a href="https://www.facebook.com/LiviaLino.Interiores/"><img src="icones/logo-face.svg" alt="Ícone do Facebook" class="contato__redes-sociais--icones"></a>
       </div>
     </address>
+    <form class="contato__formulario" action="https://formsubmit.co/livialino.interiores@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="https://livialino-interiores.vercel.app/contato-sucesso.html">
+      <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/contato-sucesso.html"> -->
+
+      <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+      <input type="hidden" name="_cc" value="mosmack@gmail.com">
+      
+      <h2 class="titulo">Envie sua mensagem</h2>
+      <label for="Assunto">Assunto:</label> 
+      <input type="text" name="Assunto" placeholder="Assunto." required>
+
+      <label for="Nome">Nome:</label> 
+      <input type="text" name="Celular" placeholder="Nome." required>
+
+      <label for="Celular">Celular:</label> 
+      <input type="tel" name="Celular" placeholder="(XX) XXXXX - XXXX" required>
+
+      <label for="E-mail">E-mail:</label> 
+      <input type="email" name="E-mail" placeholder="meuemail@exemplo.com" required>
+      
+      <label for="contato-mensagem">Mensagem:</label>
+      <textarea name="contato-mensagem"  rows="5" placeholder="Digite aqui sua mensagem." required></textarea>
+
+      <button class="contato__botao" type="submit">Enviar</button>
+      
+      
+    </form>
     
   </main>
   <footer class="rodape">
